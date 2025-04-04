@@ -1,0 +1,641 @@
+/* ======== Estilos Gerais ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #020817, #050A30, #03142B);
+    color: #E0E0E0;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+    margin: 20px auto;
+    word-wrap: break-word;
+}
+
+/* ======== Header ======== */
+header {
+    background-color: #020817;
+    padding: 20px;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.btn-login {
+    background-color: #00FFFF;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+/* ======== Seções Gerais (Aplicando Borda Neon) ======== */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FFFF;
+    background: #03142B;
+}
+
+/* ======== Seção Hero (Principal) ======== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #020817, #03142B);
+    box-shadow: 0 0 15px #00FFFF;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #00FFFF;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00FFFF;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #008B8B;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+/* ======== Seção Sobre Nós ======== */
+.about {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+/* ======== Seção Nossos Valores ======== */
+.values ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.values li {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+/* ======== Seção Tecnologia ======== */
+.technology {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+/* ======== Seção Saúde ======== */
+.health {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+/* ======== Seção Contato ======== */
+.contact {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.contact-form {
+    background: #03142B;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FFFF;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #050A30;
+    color: #E0E0E0;
+    box-shadow: 0 0 5px #00FFFF;
+}
+
+.contact-form button {
+    background-color: #00FFFF;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+.contact-form button:hover {
+    background-color: #008B8B;
+}
+
+/* ======== Rodapé ======== */
+footer {
+    text-align: center;
+    background-color: #020817;
+    padding: 20px;
+    box-shadow: 0 0 15px #00FFFF;
+    margin-top: 40px;
+}
+
+/* Seção Produtos */
+.products {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #03142B;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 10px #00FFFF;
+    word-wrap: break-word;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item h2 {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+    font-size: 20px;
+}
+
+.product-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs li {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00FFFF;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #00FFFF;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00FFFF;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #008B8B;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+/* ======== Seção Progresso do Usuário ======== */
+.user-progress {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.progress-bar {
+    background: #050A30;
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    box-shadow: 0 0 10px #00FFFF;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #00FFFF;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    line-height: 25px;
+}
+
+/* ======== Seção Estatísticas Gerais ======== */
+.general-stats {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.general-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.general-stats li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #00FFFF;
+}
+
+/* ======== Ranking Global ======== */
+.leaderboard {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #050A30;
+    box-shadow: 0 0 10px #00FFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #00FFFF;
+    text-align: center;
+    color: #E0E0E0;
+}
+
+th {
+    background: #00FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background: #03142B;
+}
+
+tbody tr:hover {
+    background: #008B8B;
+}
+
+/* ======== Seção Contato ======== */
+.contact {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.contact-form {
+    background: #03142B;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FFFF;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #050A30;
+    color: #E0E0E0;
+    box-shadow: 0 0 5px #00FFFF;
+}
+
+.contact-form button {
+    background-color: #00FFFF;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+.contact-form button:hover {
+    background-color: #008B8B;
+}
+
+/* ======== Informações de Contato ======== */
+.contact-info {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+/* ======== Mapa ======== */
+.map {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.map iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+/* ======== Tela de Login ======== */
+body.login-page {
+    height: 100vh;
+    background: linear-gradient(to bottom, #020817, #050A30, #03142B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #03142B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FFFF;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #050A30;
+    color: #E0E0E0;
+    box-shadow: 0 0 5px #00FFFF;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00FFFF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 10px #00FFFF;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background-color: #008B8B;
+}
+
+#login-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.user-name {
+    color: #00FFFF;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+/* Configuração padrão para telas grandes (PC) */
+table {
+    width: 80%; /* Deixa a tabela com largura ideal no PC */
+    max-width: 1200px; /* Define um limite para não ficar gigante */
+    margin: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: nowrap;
+    font-size: 16px; /* Fonte agradável no PC */
+  }
+  
+  /* Ajuste para telas menores (Celulares) */
+  @media screen and (max-width: 768px) {
+    table {
+      width: 100%; /* Ocupa toda a largura do celular */
+      display: block;
+      overflow-x: auto;
+    }
+  
+    th, td {
+      font-size: 12px; /* Reduz a fonte no celular */
+      padding: 6px; /* Menos espaço para caber melhor */
+      white-space: nowrap; /* Evita quebra de linha feia */
+    }
+  }
+
+/* ======== Estilos do Carrinho ======== */
+.cart {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #03142B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FFFF;
+    text-align: center;
+}
+
+.cart h1 {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+    margin-bottom: 20px;
+}
+
+#itens-carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#itens-carrinho div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050A30;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FFFF;
+    color: #E0E0E0;
+}
+
+#itens-carrinho button {
+    background: #FF4444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#itens-carrinho button:hover {
+    background: #CC0000;
+}
+
+/* Botão de Finalizar Compra */
+#finalizar-compra {
+    background-color: #00FFFF;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00FFFF;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#finalizar-compra:hover {
+    background-color: #008B8B;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+
+/* Botão de compre ja dos produtos */
+.btn-comprar {
+    background: linear-gradient(90deg, #001f3f, #0074D9); /* Azul escuro para azul forte */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 2px solid #0074D9; /* Azul forte */
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(0, 116, 217, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-comprar:hover {
+    background: linear-gradient(90deg, #0074D9, #001f3f); /* Inverte a cor no hover */
+    box-shadow: 0 0 15px rgba(0, 116, 217, 1);
+    transform: scale(1.05);
+    border-color: #00A3FF; /* Um azul mais claro no hover */
+}
+
+.btn-comprar::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 5px;
+    background: rgba(0, 116, 217, 0.5);
+    box-shadow: 0 0 20px rgba(0, 116, 217, 0.9);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.btn-comprar:hover::before {
+    opacity: 1;
+    filter: blur(8px);
+}
+
+.product-item img {
+    width: 100%; /* Para ocupar toda a largura do contêiner */
+    max-width: 250px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    display: block;
+    margin: 0 auto 10px auto; /* Centraliza a imagem */
+}

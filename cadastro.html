@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PosturaTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+
+    <section class="login-container">
+        <h1>Cadastro</h1>
+        <form id="cadastro-form">
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="cadastro-message"></p>
+        <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    </section>
+
+    <script>
+        document.getElementById("cadastro-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const message = document.getElementById("cadastro-message");
+
+            // Salva os dados no localStorage
+            const usuario = { nome, email, password };
+            localStorage.setItem("usuario", JSON.stringify(usuario));
+
+            message.textContent = "Cadastro realizado com sucesso! Redirecionando...";
+            message.style.color = "lime";
+
+            setTimeout(() => {
+                window.location.href = "index.html"; // Redireciona para a página inicial
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>

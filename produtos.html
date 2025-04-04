@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos - Cadeiras Ergonômicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">PostureX - Produtos</div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tabela.html">Tabela</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button id="login-button" class="btn-login">Login</button>
+        </nav>
+    </header>
+
+    <!-- Seção Produtos -->
+    <section class="products">
+        <h1>Nossos Produtos</h1>
+        <p>Descubra as cadeiras ergonômicas perfeitas para você. Conforto, design moderno e suporte postural de alta tecnologia.</p>
+
+        <div class="product-grid">
+
+            <!-- Produto 1 -->
+            <div class="product-item">
+                <img src="assets/cadeira egonomica.png" alt="Cadeira Ergonômica Pro">
+                <h2>Cadeira Ergonômica Pro</h2>
+                <p>Desenvolvida para garantir conforto extremo e suporte total para sua postura. Perfeita para escritórios e home offices.</p>
+                <ul class="product-specs">
+                    <li>✅ Encosto ajustável com suporte lombar</li>
+                    <li>✅ Apoio de braços 4D</li>
+                    <li>✅ Revestimento premium respirável</li>
+                    <li>✅ Ajuste de altura e inclinação</li>
+                </ul>
+                <p class="price">R$ 1.599,00</p>
+                <button class="btn-comprar" onclick="adicionarAoCarrinho('Cadeira Ergonômica Pro', 1599.00)">Comprar</button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-item">
+                <img src="assets/cadeira gamer.png" alt="Cadeira Gamer Postural">
+                <h2>Cadeira Gamer Postural</h2>
+                <p>Alto desempenho para jogadores e profissionais que precisam de conforto por longas horas.</p>
+                <ul class="product-specs">
+                    <li>✅ Estrutura reforçada em aço</li>
+                    <li>✅ Assento ultra macio com espuma de alta densidade</li>
+                    <li>✅ Almofadas de apoio para lombar e pescoço</li>
+                    <li>✅ Inclinação de até 180° para descanso</li>
+                </ul>
+                <p class="price">R$ 1.899,00</p>
+                <button class="btn-comprar" onclick="adicionarAoCarrinho('Cadeira Gamer Postural', 1899.00)">Comprar</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-item">
+                <img src="assets/cadeira office.png" alt="Cadeira Office Plus">
+                <h2>Cadeira Office Plus</h2>
+                <p>Design sofisticado para quem busca ergonomia e estilo no ambiente de trabalho.</p>
+                <ul class="product-specs">
+                    <li>✅ Estrutura leve e resistente</li>
+                    <li>✅ Assento de couro sintético premium</li>
+                    <li>✅ Rodas anti-risco e giro 360°</li>
+                    <li>✅ Sistema de inclinação dinâmico</li>
+                </ul>
+                <p class="price">R$ 1.299,00</p>
+                <button class="btn-comprar" onclick="adicionarAoCarrinho('Cadeira Office Plus', 1299.00)">Comprar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Depoimentos de Clientes -->
+    <section class="reviews">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="review-item">
+            <p>"A melhor cadeira que já comprei! Meu conforto no trabalho aumentou muito!"</p>
+            <strong>— Lucas S.</strong>
+        </div>
+        <div class="review-item">
+            <p>"Sou gamer e essa cadeira mudou minha experiência. Suporte incrível!"</p>
+            <strong>— Mariana R.</strong>
+        </div>
+        <div class="review-item">
+            <p>"Ótimo custo-benefício. Design bonito e ergonomia excelente."</p>
+            <strong>— Felipe A.</strong>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Cadeiras Ergonômicas - Esse site apenas foi feito para uma apresentação da matéria Software Engineering and Business Model pela FIAP.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="carrinho.js"></script>
+
+
+</body>
+</html>
